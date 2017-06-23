@@ -1,0 +1,15 @@
+---
+layout: page
+title: Blog 
+permalink: /blog/
+comments: false
+author_footer: false
+order: 3
+---
+<div class="content-wrapper">
+{% for post in site.posts %}
+        {% assign page = post %}
+        {% include post.html %}
+    
+{% endfor %}
+</div>
